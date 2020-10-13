@@ -55,28 +55,6 @@ curl -X POST "https://toonify.p.rapidapi.com/v0/toonify" -H  "accept: image/jpeg
 ```
 
 
-## Indexing faces
-
-In the above example one of the json field is `num_faces` this tells you how many faces were detected in the original image. If there are multiple faces in the image then you can toonify all of them by passing an extra query parameter of `face_index`. This zero based index controls which detected face will be sent for toonifcation.
-
-```python
-import requests
-
-url = "https://toonify.p.rapidapi.com/v0/toonify"
-query = {
-        "x-rapidapi-host": "toonify.p.rapidapi.com",
-        "x-rapidapi-key": "KEY_HERE",
-        "accept": "application/json",
-        "face_index": 1, 
-        }
-headers = {"accept": "application/json"}
-files = {"image": open("imagefile.jpg", "rb")}
-
-response = requests.request("POST", url, files=files, headers=headers, params=query)
-
-print(response.json())
-```
-
 ## Returning aligned image
 
 If you want to return the cropped and aligned face as well as the toonified result you can pass a query parameter of `return_aligned=True`. If the return type is json then the aligned face will be returned base64 encoded in the `b64_encoded_aligned` field. If the return type is an image then the two images will be horizontally concatenated and returned.
@@ -102,3 +80,5 @@ print(reponse.content) #will be the jpeg image bytes
 ```
 
 ![](https://assets.justinpinkney.com/toonify/images/pair.jpeg)
+
+__Next take a look at the various options you have: [More Options](more-options)__

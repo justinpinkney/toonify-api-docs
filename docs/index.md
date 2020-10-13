@@ -6,8 +6,8 @@ We provide API access to the Toonification model made famous by [Toonify Yoursel
 
 The API is accessible through RapidAPI (who take care of all the authentication and billing for us). Please [sign up for an API key](https://rapidapi.com/justinpinkney/api/toonify) there to try it out.
 
-If you have an API key take a look at our [Getting Started tutorial](user-guide/getting-started).
+__If you have an API key then take a look at our [Getting Started tutorial](getting-started).__
 
-This is an early version of the API, more capabilities and models will be coming in the future. If you've got any feedback please create an issue on GitHub, or reach out to me [on Twitter](twitter.com/buntworthy).
+This is an early version of the API, more capabilities and models will be coming in the future. If you've got any feedback please create an [issue on GitHub](https://github.com/justinpinkney/toonify-api-docs/issues), or reach out to me [on Twitter](twitter.com/buntworthy).
 
 ![](https://assets.justinpinkney.com/toonify/images/social.jpg)
