@@ -8,19 +8,19 @@
       
       
       
-      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.2">
     
     
       
-        <title>Getting started - Toonify API Documentation</title>
+        <title>More options - Toonify API Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.38780c08.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.38780c08.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f72e892.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f72e892.min.css">
         
       
     
@@ -56,7 +56,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#first-steps" class="md-skip">
+        <a href="#indexing-faces" class="md-skip">
           Skip to content
         </a>
       
@@ -67,7 +67,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="../.." title="Toonify API Documentation" class="md-header-nav__button md-logo" aria-label="Toonify API Documentation">
+    <a href=".." title="Toonify API Documentation" class="md-header-nav__button md-logo" aria-label="Toonify API Documentation">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -84,7 +84,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Getting started
+              More options
             
           </span>
         </div>
@@ -139,7 +139,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Toonify API Documentation" class="md-nav__button md-logo" aria-label="Toonify API Documentation">
+    <a href=".." title="Toonify API Documentation" class="md-nav__button md-logo" aria-label="Toonify API Documentation">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -156,8 +156,32 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." class="md-nav__link">
+    <a href=".." class="md-nav__link">
       Toonify API
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../change-log/" class="md-nav__link">
+      v0.0.1 - 13th October 2020
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../getting-started/" class="md-nav__link">
+      Getting started
     </a>
   </li>
 
@@ -169,41 +193,18 @@
   
 
 
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
-    
-    <label class="md-nav__link" for="nav-2">
-      User guide
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="User guide" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
-        <span class="md-nav__icon md-icon"></span>
-        User guide
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-  
-
-
   <li class="md-nav__item md-nav__item--active">
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Getting started
+        More options
         <span class="md-nav__icon md-icon"></span>
       </label>
     
     <a href="./" class="md-nav__link md-nav__link--active">
-      Getting started
+      More options
     </a>
     
       
@@ -218,20 +219,6 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#first-steps" class="md-nav__link">
-    First steps
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#returning-an-image" class="md-nav__link">
-    Returning an image
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#indexing-faces" class="md-nav__link">
     Indexing faces
   </a>
@@ -239,8 +226,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#returning-aligned-image" class="md-nav__link">
-    Returning aligned image
+  <a href="#cropping-edges" class="md-nav__link">
+    Cropping edges
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#behaviour-when-no-face-is-found" class="md-nav__link">
+    Behaviour when no face is found
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-with-all-the-options" class="md-nav__link">
+    Example with all the options
   </a>
   
 </li>
@@ -251,9 +252,16 @@
     
   </li>
 
-        
-      </ul>
-    </nav>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../tips-and-considerations/" class="md-nav__link">
+      Tips and considerations
+    </a>
   </li>
 
     
@@ -279,20 +287,6 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#first-steps" class="md-nav__link">
-    First steps
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#returning-an-image" class="md-nav__link">
-    Returning an image
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#indexing-faces" class="md-nav__link">
     Indexing faces
   </a>
@@ -300,8 +294,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#returning-aligned-image" class="md-nav__link">
-    Returning aligned image
+  <a href="#cropping-edges" class="md-nav__link">
+    Cropping edges
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#behaviour-when-no-face-is-found" class="md-nav__link">
+    Behaviour when no face is found
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-with-all-the-options" class="md-nav__link">
+    Example with all the options
   </a>
   
 </li>
@@ -319,53 +327,16 @@
               
                 
                 
-                  <h1>Getting started</h1>
+                  <h1>More options</h1>
                 
-                <p><strong>Note: There seems to be an issue with the RapidAPI interactive endpoint explorer not properly sending requests as multipart/form-data. Make sure you use this guide as your reference for testing the API as the code snippets generated by RapidAPI don't work</strong></p>
-<h2 id="first-steps">First steps</h2>
-<p>The following example uses the Python library Requests to send an image file for toonification. If the <code>Accept</code> header is <code>application/json</code> the response will be json, with images base64 encoded. </p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">requests</span>
-
-<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://toonify.p.rapidapi.com/v0/toonify&quot;</span>
-<span class="n">query</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="s2">&quot;x-rapidapi-host&quot;</span><span class="p">:</span> <span class="s2">&quot;toonify.p.rapidapi.com&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;x-rapidapi-key&quot;</span><span class="p">:</span> <span class="s2">&quot;KEY_HERE&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;accept&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
-        <span class="p">}</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;accept&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">}</span>
-<span class="n">files</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;imagefile.jpg&quot;</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)}</span>
-
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">&quot;POST&quot;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="n">files</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">query</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
-</code></pre></div>
-<p>will return a json response like this:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;num_faces&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&quot;b64_encoded_output&quot;</span><span class="p">:</span> <span class="s2">&quot;BASE64_IMAGE_HERE&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;b64_encoded_aligned&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
-<span class="p">}</span>
-</code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>When returning a json response all images are base64 encoded and returned as a string. Here's an example of how to read one of these into a PIL Image in Python:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">base64</span>
-<span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">BytesIO</span>
-<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
-
-<span class="n">b64_encoded_output</span> <span class="o">=</span> <span class="s2">&quot;BASE64_IMAGE_HERE&quot;</span>
-<span class="n">file_like</span> <span class="o">=</span> <span class="n">BytesIO</span><span class="p">(</span><span class="n">base64</span><span class="o">.</span><span class="n">b64decode</span><span class="p">(</span><span class="n">b64_encoded_output</span><span class="p">))</span>
-<span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">file_like</span><span class="p">)</span>
-
-<span class="n">image</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</code></pre></div>
-</div>
-<h2 id="returning-an-image">Returning an image</h2>
-<p>If you want an image directly returned then set the <code>Accept</code> header to <code>image/jpeg</code>. Here is an example using curl for variety.</p>
-<div class="highlight"><pre><span></span><code>curl -X POST <span class="s2">&quot;https://toonify.p.rapidapi.com/v0/toonify&quot;</span> -H  <span class="s2">&quot;accept: image/jpeg&quot;</span> -H  <span class="s2">&quot;Content-Type: multipart/form-data&quot;</span> -H <span class="s2">&quot;x-rapidapi-host: toonify.p.rapidapi.com&quot;</span> -H <span class="s2">&quot;x-rapidapi-key: KEY_HERE&quot;</span> -F <span class="s2">&quot;image=@test.jpg;type=image/jpeg&quot;</span>
-</code></pre></div>
+                <p>In the previous example you saw one query parameter that you can pass <code>return_aligned</code> to receive the original cropped face or not. There are a few other parameters that the API currently exposes:</p>
+<ul>
+<li><code>face_index</code> (default: 0)</li>
+<li><code>crop_edges</code> (default: 0)</li>
+<li><code>proceed_without_face</code> (default: False)</li>
+</ul>
 <h2 id="indexing-faces">Indexing faces</h2>
-<p>In the above example one of the json field is <code>num_faces</code> this tells you how many faces were detected in the original image. If there are multiple faces in the image then you can toonify all of them by passing an extra query parameter of <code>face_index</code>. This zero based index controls which detected face will be sent for toonifcation.</p>
+<p>One of the json response fields is <code>num_faces</code> this tells you how many faces were detected in the original image. If there are multiple faces in the image then you can toonify all of them by passing an extra query parameter of <code>face_index</code>. This zero based index controls which detected face will be sent for toonifcation.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">requests</span>
 
 <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://toonify.p.rapidapi.com/v0/toonify&quot;</span>
@@ -373,7 +344,7 @@
         <span class="s2">&quot;x-rapidapi-host&quot;</span><span class="p">:</span> <span class="s2">&quot;toonify.p.rapidapi.com&quot;</span><span class="p">,</span>
         <span class="s2">&quot;x-rapidapi-key&quot;</span><span class="p">:</span> <span class="s2">&quot;KEY_HERE&quot;</span><span class="p">,</span>
         <span class="s2">&quot;accept&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;face_index&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> 
+        <span class="s2">&quot;face_index&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="c1"># Process the second face in the image</span>
         <span class="p">}</span>
 <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;accept&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">}</span>
 <span class="n">files</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;imagefile.jpg&quot;</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)}</span>
@@ -382,8 +353,12 @@
 
 <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
 </code></pre></div>
-<h2 id="returning-aligned-image">Returning aligned image</h2>
-<p>If you want to return the cropped and aligned face as well as the toonified result you can pass a query parameter of <code>return_aligned=True</code>. If the return type is json then the aligned face will be returned base64 encoded in the <code>b64_encoded_aligned</code> field. If the return type is an image then the two images will be horizontally concatenated and returned.</p>
+<h2 id="cropping-edges">Cropping edges</h2>
+<p>The original model processes images at 512x512 pixels. Sometimes these edges are quite low quality, especially if the original image is a tight crop. You can remove these and get a (slightly) faster response time by setting the <code>crop_edges</code> parameter to be greater than 0. Generally 16 is a good value, but multiples of 8 are recommended.</p>
+<h2 id="behaviour-when-no-face-is-found">Behaviour when no face is found</h2>
+<p>The <code>proceed_without_face</code> parameter controls the behaviour if no face is found. By default if no face is found the API returns an error. If you set <code>proceed_without_face</code> to be True, we will simply resize and process the full original image as is, the quality in this case is likely to not be good.</p>
+<p><img alt="" src="../koala.jpeg" /></p>
+<h2 id="example-with-all-the-options">Example with all the options</h2>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">requests</span>
 
 <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://toonify.p.rapidapi.com/v0/toonify&quot;</span>
@@ -391,17 +366,18 @@
         <span class="s2">&quot;x-rapidapi-host&quot;</span><span class="p">:</span> <span class="s2">&quot;toonify.p.rapidapi.com&quot;</span><span class="p">,</span>
         <span class="s2">&quot;x-rapidapi-key&quot;</span><span class="p">:</span> <span class="s2">&quot;KEY_HERE&quot;</span><span class="p">,</span>
         <span class="s2">&quot;accept&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;face_index&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> 
-        <span class="s2">&quot;return_aligned&quot;</span><span class="p">:</span><span class="s2">&quot;true&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;face_index&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="c1"># Process the second face in the image</span>
+        <span class="s2">&quot;crop_edges&quot;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span> <span class="c1"># crop a 16 pixel border from the image</span>
+        <span class="s2">&quot;proceed_without_face&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="c1"># Process even when no face is found</span>
         <span class="p">}</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;accept&quot;</span><span class="p">:</span> <span class="s2">&quot;image/jpeg&quot;</span><span class="p">}</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;accept&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">}</span>
 <span class="n">files</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;imagefile.jpg&quot;</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)}</span>
 
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">&quot;POST&quot;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="n">files</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">query</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">reponse</span><span class="o">.</span><span class="n">content</span><span class="p">)</span> <span class="c1">#will be the jpeg image bytes</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
 </code></pre></div>
-<p><img alt="" src="https://assets.justinpinkney.com/toonify/images/pair.jpeg" /></p>
+<p><strong>Next see <a href="tips and considerations">tips and considerations</a> in using the API.</strong></p>
                 
               
               
@@ -420,7 +396,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../.." class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../getting-started/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -429,11 +405,25 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Toonify API
+                Getting started
               </div>
             </div>
           </a>
         
+        
+          <a href="../tips-and-considerations/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Tips and considerations
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
         
       </nav>
     </div>
@@ -454,15 +444,15 @@
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.77e55a48.min.js"></script>
-      <script src="../../assets/javascripts/bundle.9554a270.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../assets/javascripts/vendor.77e55a48.min.js"></script>
+      <script src="../assets/javascripts/bundle.9554a270.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
-          base: "../..",
+          base: "..",
           features: [],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.4ac00218.min.js"
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
