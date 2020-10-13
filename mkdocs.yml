@@ -1,0 +1,8 @@
+site_name: Toonify API Documentation
+theme:
+        name: material
+markdown_extensions:
+        - pymdownx.highlight
+        - pymdownx.superfences
+        - pymdownx.inlinehilite
+        - admonition
