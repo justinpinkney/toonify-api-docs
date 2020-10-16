@@ -13,12 +13,13 @@ import requests
 
 url = "https://toonify.p.rapidapi.com/v0/toonify"
 query = {
+        "face_index": 1, # Process the second face in the image
+        }
+headers = {
         "x-rapidapi-host": "toonify.p.rapidapi.com",
         "x-rapidapi-key": "KEY_HERE",
         "accept": "application/json",
-        "face_index": 1, # Process the second face in the image
         }
-headers = {"accept": "application/json"}
 files = {"image": open("imagefile.jpg", "rb")}
 
 response = requests.request("POST", url, files=files, headers=headers, params=query)
@@ -42,15 +43,16 @@ The `proceed_without_face` parameter controls the behaviour if no face is found.
 import requests
 
 url = "https://toonify.p.rapidapi.com/v0/toonify"
-query = {
+headers = {
         "x-rapidapi-host": "toonify.p.rapidapi.com",
         "x-rapidapi-key": "KEY_HERE",
         "accept": "application/json",
+}
+query = {
         "face_index": 1, # Process the second face in the image
         "crop_edges": 16, # crop a 16 pixel border from the image
         "proceed_without_face": True, # Process even when no face is found
         }
-headers = {"accept": "application/json"}
 files = {"image": open("imagefile.jpg", "rb")}
 
 response = requests.request("POST", url, files=files, headers=headers, params=query)

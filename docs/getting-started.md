@@ -8,15 +8,14 @@ The following example uses the Python library Requests to send an image file for
 import requests
 
 url = "https://toonify.p.rapidapi.com/v0/toonify"
-query = {
+headers = {
         "x-rapidapi-host": "toonify.p.rapidapi.com",
         "x-rapidapi-key": "KEY_HERE",
         "accept": "application/json",
         }
-headers = {"accept": "application/json"}
 files = {"image": open("imagefile.jpg", "rb")}
 
-response = requests.request("POST", url, files=files, headers=headers, params=query)
+response = requests.request("POST", url, files=files, headers=headers)
 
 print(response.json())
 ```
@@ -65,13 +64,14 @@ import requests
 
 url = "https://toonify.p.rapidapi.com/v0/toonify"
 query = {
-        "x-rapidapi-host": "toonify.p.rapidapi.com",
-        "x-rapidapi-key": "KEY_HERE",
-        "accept": "application/json",
         "face_index": 1, 
         "return_aligned":"true",
         }
-headers = {"accept": "image/jpeg"}
+headers = {
+        "x-rapidapi-host": "toonify.p.rapidapi.com",
+        "x-rapidapi-key": "KEY_HERE",
+        "accept": "image/jpeg"
+        }
 files = {"image": open("imagefile.jpg", "rb")}
 
 response = requests.request("POST", url, files=files, headers=headers, params=query)
