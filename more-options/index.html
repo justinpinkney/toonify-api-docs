@@ -341,12 +341,13 @@
 
 <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://toonify.p.rapidapi.com/v0/toonify&quot;</span>
 <span class="n">query</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;face_index&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="c1"># Process the second face in the image</span>
+        <span class="p">}</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s2">&quot;x-rapidapi-host&quot;</span><span class="p">:</span> <span class="s2">&quot;toonify.p.rapidapi.com&quot;</span><span class="p">,</span>
         <span class="s2">&quot;x-rapidapi-key&quot;</span><span class="p">:</span> <span class="s2">&quot;KEY_HERE&quot;</span><span class="p">,</span>
         <span class="s2">&quot;accept&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;face_index&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="c1"># Process the second face in the image</span>
         <span class="p">}</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;accept&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">}</span>
 <span class="n">files</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;imagefile.jpg&quot;</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)}</span>
 
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">&quot;POST&quot;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="n">files</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">query</span><span class="p">)</span>
@@ -362,15 +363,16 @@
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">requests</span>
 
 <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://toonify.p.rapidapi.com/v0/toonify&quot;</span>
-<span class="n">query</span> <span class="o">=</span> <span class="p">{</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s2">&quot;x-rapidapi-host&quot;</span><span class="p">:</span> <span class="s2">&quot;toonify.p.rapidapi.com&quot;</span><span class="p">,</span>
         <span class="s2">&quot;x-rapidapi-key&quot;</span><span class="p">:</span> <span class="s2">&quot;KEY_HERE&quot;</span><span class="p">,</span>
         <span class="s2">&quot;accept&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+<span class="n">query</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s2">&quot;face_index&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="c1"># Process the second face in the image</span>
         <span class="s2">&quot;crop_edges&quot;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span> <span class="c1"># crop a 16 pixel border from the image</span>
         <span class="s2">&quot;proceed_without_face&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="c1"># Process even when no face is found</span>
         <span class="p">}</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;accept&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">}</span>
 <span class="n">files</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;imagefile.jpg&quot;</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)}</span>
 
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">&quot;POST&quot;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="n">files</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">query</span><span class="p">)</span>

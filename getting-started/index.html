@@ -321,15 +321,14 @@
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">requests</span>
 
 <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://toonify.p.rapidapi.com/v0/toonify&quot;</span>
-<span class="n">query</span> <span class="o">=</span> <span class="p">{</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s2">&quot;x-rapidapi-host&quot;</span><span class="p">:</span> <span class="s2">&quot;toonify.p.rapidapi.com&quot;</span><span class="p">,</span>
         <span class="s2">&quot;x-rapidapi-key&quot;</span><span class="p">:</span> <span class="s2">&quot;KEY_HERE&quot;</span><span class="p">,</span>
         <span class="s2">&quot;accept&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
         <span class="p">}</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;accept&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">}</span>
 <span class="n">files</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;imagefile.jpg&quot;</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)}</span>
 
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">&quot;POST&quot;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="n">files</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">query</span><span class="p">)</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">&quot;POST&quot;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="n">files</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
 </code></pre></div>
@@ -364,13 +363,14 @@
 
 <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://toonify.p.rapidapi.com/v0/toonify&quot;</span>
 <span class="n">query</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="s2">&quot;x-rapidapi-host&quot;</span><span class="p">:</span> <span class="s2">&quot;toonify.p.rapidapi.com&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;x-rapidapi-key&quot;</span><span class="p">:</span> <span class="s2">&quot;KEY_HERE&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;accept&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
         <span class="s2">&quot;face_index&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> 
         <span class="s2">&quot;return_aligned&quot;</span><span class="p">:</span><span class="s2">&quot;true&quot;</span><span class="p">,</span>
         <span class="p">}</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;accept&quot;</span><span class="p">:</span> <span class="s2">&quot;image/jpeg&quot;</span><span class="p">}</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;x-rapidapi-host&quot;</span><span class="p">:</span> <span class="s2">&quot;toonify.p.rapidapi.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;x-rapidapi-key&quot;</span><span class="p">:</span> <span class="s2">&quot;KEY_HERE&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;accept&quot;</span><span class="p">:</span> <span class="s2">&quot;image/jpeg&quot;</span>
+        <span class="p">}</span>
 <span class="n">files</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;imagefile.jpg&quot;</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)}</span>
 
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">&quot;POST&quot;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="n">files</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">query</span><span class="p">)</span>
