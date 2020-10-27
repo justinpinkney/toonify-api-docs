@@ -13,7 +13,7 @@
     
     
       
-        <title>Version change log - Toonify API Documentation</title>
+        <title>Models - Toonify API Documentation</title>
       
     
     
@@ -56,7 +56,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#v010-27th-october-2020" class="md-skip">
+        <a href="#toonify" class="md-skip">
           Skip to content
         </a>
       
@@ -84,7 +84,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Version change log
+              Models
             
           </span>
         </div>
@@ -178,11 +178,66 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../models/" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Models
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
       Models
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#toonify" class="md-nav__link">
+    Toonify
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emojify" class="md-nav__link">
+    Emojify
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#toonifyplus" class="md-nav__link">
+    Toonifyplus
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#halloweenify" class="md-nav__link">
+    Halloweenify
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -214,52 +269,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Version change log
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../version-change-log/" class="md-nav__link">
       Version change log
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#v010-27th-october-2020" class="md-nav__link">
-    v0.1.0 - 27th October 2020
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#v001-13th-october-2020" class="md-nav__link">
-    v0.0.1 - 13th October 2020
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -285,15 +299,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#v010-27th-october-2020" class="md-nav__link">
-    v0.1.0 - 27th October 2020
+  <a href="#toonify" class="md-nav__link">
+    Toonify
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v001-13th-october-2020" class="md-nav__link">
-    v0.0.1 - 13th October 2020
+  <a href="#emojify" class="md-nav__link">
+    Emojify
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#toonifyplus" class="md-nav__link">
+    Toonifyplus
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#halloweenify" class="md-nav__link">
+    Halloweenify
   </a>
   
 </li>
@@ -311,17 +339,41 @@
               
                 
                 
-                  <h1>Version change log</h1>
+                  <h1>Models</h1>
                 
-                <h2 id="v010-27th-october-2020">v0.1.0 - 27th October 2020</h2>
+                <p>We currently provide API access to 4 different models. <strong>Note the different models consume different numbers of Credits for each API call</strong></p>
+<h2 id="toonify">Toonify</h2>
 <ul>
-<li>Added new <a href="models">model</a> endpoints</li>
+<li>Credits per call = 2</li>
+<li>Endpoint: <code>v0/toonify</code></li>
+<li>The original Toonify model</li>
 </ul>
-<h2 id="v001-13th-october-2020">v0.0.1 - 13th October 2020</h2>
+<p><img alt="" src="../examples/will_smith_toonify.jpg" />
+<img alt="" src="../examples/winslet_toonify.jpg" /></p>
+<h2 id="emojify">Emojify</h2>
 <ul>
-<li>Added <code>crop_edges</code> option</li>
-<li>Added <code>proceed_without_face</code> option</li>
+<li>Credits per call = 4</li>
+<li>Endpoint: <code>v0/emojify</code></li>
+<li>Produces an emoji style image</li>
 </ul>
+<p><img alt="" src="../examples/will_smith_emoji.jpg" />
+<img alt="" src="../examples/winslet_emoji.jpg" /></p>
+<h2 id="toonifyplus">Toonifyplus</h2>
+<ul>
+<li>Credits per call = 4</li>
+<li>Endpoint: <code>v0/toonifyplus</code></li>
+<li>Toon style image more faithful to original features and more noise resistant</li>
+</ul>
+<p><img alt="" src="../examples/will_smith_toonifyplus.jpg" />
+<img alt="" src="../examples/winslet_toonifyplus.jpg" /></p>
+<h2 id="halloweenify">Halloweenify</h2>
+<ul>
+<li>Credits per call = 4</li>
+<li>Endpoint: <code>v0/halloweenify</code></li>
+<li>Zombie/horror like appearance</li>
+</ul>
+<p><img alt="" src="../examples/will_smith_halloween.jpg" />
+<img alt="" src="../examples/winslet_halloween.jpg" /></p>
                 
               
               
@@ -340,7 +392,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../tips-and-considerations/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../getting-started/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -349,11 +401,25 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Tips and considerations
+                Getting started
               </div>
             </div>
           </a>
         
+        
+          <a href="../more-options/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                More options
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
         
       </nav>
     </div>
