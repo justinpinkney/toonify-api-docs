@@ -19,6 +19,16 @@ We currently provide API access to 4 different models. __Note the different mode
 ![](examples/winslet_emoji.jpg)
 
 
+## Zombify
+
+- Credits per call = 4
+- Endpoint: `v0/zombify`
+- Zombie model from https://makemeazombie.com/
+
+![](examples/will_smith_zombie.jpg)
+![](examples/winslet_zombie.jpg)
+
+
 ## Toonifyplus
 
 - Credits per call = 4
