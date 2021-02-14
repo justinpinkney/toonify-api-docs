@@ -1,8 +1,28 @@
 We currently provide API access to 4 different models. __Note the different models consume different numbers of Credits for each API call__
 
+_NEW !_
+## Toonify HD
+
+- __Credits per call = 100__
+- Endpoint: `v0/toonifyhd`
+- Produces a toonify style image at 1024x1024 resolution
+- Only available on the MEGA subscription
+
+![](examples/will_smith_toonifyhd.jpg)
+![](examples/winslet_toonifyhd.jpg)
+
+## Caricature
+
+- __Credits per call = 4__
+- Endpoint: `v0/caricature`
+- Produces a caricature style image
+
+![](examples/will_smith_caricature.jpg)
+![](examples/winslet_caricature.jpg)
+
 ## Toonify
 
-- Credits per call = 2
+- __Credits per call = 2__
 - Endpoint: `v0/toonify`
 - The original Toonify model
 
@@ -11,7 +31,7 @@ We currently provide API access to 4 different models. __Note the different mode
 
 ## Emojify
 
-- Credits per call = 4
+- __Credits per call = 4__
 - Endpoint: `v0/emojify`
 - Produces an emoji style image
 
@@ -21,7 +41,7 @@ We currently provide API access to 4 different models. __Note the different mode
 
 ## Zombify
 
-- Credits per call = 4
+- __Credits per call = 4__
 - Endpoint: `v0/zombify`
 - Zombie model from https://makemeazombie.com/
 
@@ -31,7 +51,7 @@ We currently provide API access to 4 different models. __Note the different mode
 
 ## Toonifyplus
 
-- Credits per call = 4
+- __Credits per call = 4__
 - Endpoint: `v0/toonifyplus`
 - Toon style image more faithful to original features and more noise resistant
 
@@ -41,7 +61,7 @@ We currently provide API access to 4 different models. __Note the different mode
 
 ## Halloweenify
 
-- Credits per call = 4
+- __Credits per call = 4__
 - Endpoint: `v0/halloweenify`
 - Zombie/horror like appearance
 
